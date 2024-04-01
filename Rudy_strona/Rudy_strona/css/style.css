@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   display: grid;
   width: 100%;
   height: 100%;
@@ -7,26 +8,32 @@
   "main main main main main menu"
   "stopka stopka stopka stopka stopka stopka";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr 1fr 60px;
+  grid-template-rows: 1fr 1fr 1fr 60px;
+  background: #000;
 }
 .container > div {
-  border: 1px dashed #888;
+  border:5px solid;
+  border-style: dashed;
 }
-
+}
+body {
+  background-color: black;
+}
 .logo {
   grid-area: logo;
 }
+.button {
+  width: 100%;
+  height: 100%;
+}
 .k1 {
   grid-area: k1;
-  border-color: red;
-  border-style: double;
 }
 .k2 {
   grid-area: k2;
 }
 .k3 {
   grid-area: k3;
-  background: red;
 }
 .k4 {
   grid-area: k4;
@@ -39,10 +46,37 @@
   background: blue;
   font-size: 34px;
   text-align: center;
+  border-width: 1em;
 }
 .main {
   grid-area: main;
+  background: yellow;
+  border-width: 1em;
 }
 .stopka {
   grid-area: stopka;
+  font-family: "Century Gothic";
+  text-align: center;
+}
+.overlay {
+  position: relative;
+  height: auto;
+  width: auto;
+  opacity: 0%;
+  transition: .5s ease;
+
+}
+.button:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  background: red;
+  font-size: 20px;
+  position: relative;
+
+  -webkit-transform: translate(0%, -330%);
+  -ms-transform: translate(0%, -330%);
+  transform: translate(0%, -330%);
+  text-align: center;
 }

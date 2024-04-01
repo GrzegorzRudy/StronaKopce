@@ -1,4 +1,9 @@
+a{
+  text-decoration: none;
+  color: black;
+}
 .container {
+
   position: relative;
   display: grid;
   width: 100%;
@@ -14,6 +19,8 @@
 .container > div {
   border:5px solid;
   border-style: dashed;
+  border-color: white;
+  border-top: none;
 }
 
 body {
@@ -21,6 +28,9 @@ body {
 }
 .logo {
   grid-area: logo;
+  background-color: green;
+
+
 }
 .button {
   width: 100%;
@@ -47,16 +57,19 @@ body {
   font-size: 34px;
   text-align: center;
   border-width: 1em;
+
 }
 .main {
   grid-area: main;
   background: yellow;
   border-width: 1em;
+  border-width: 0;
 }
 .stopka {
   grid-area: stopka;
   font-family: "Century Gothic";
   text-align: center;
+  color: white;
 }
 .overlay {
   position: relative;
@@ -68,6 +81,9 @@ body {
 }
 .button:hover .overlay {
   opacity: 1;
+}
+.a:hover .a {
+  color: pink;
 }
 .text {
   color: white;

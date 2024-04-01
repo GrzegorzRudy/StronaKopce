@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "logo logo logo logo logo logo"
+  "k1 k2 k3 k4 k5 menu"
+  "main main main main main menu"
+  "stopka stopka stopka stopka stopka stopka";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr 60px;
+}
+.container > div {
+  border: 1px dashed #888;
+}
+
+.logo {
+  grid-area: logo;
+}
+.k1 {
+  grid-area: k1;
+  border-color: red;
+  border-style: double;
+}
+.k2 {
+  grid-area: k2;
+}
+.k3 {
+  grid-area: k3;
+  background: red;
+}
+.k4 {
+  grid-area: k4;
+}
+.k5 {
+  grid-area: k5;
+}
+.menu {
+  grid-area: menu;
+  background: blue;
+  font-size: 34px;
+  text-align: center;
+}
+.main {
+  grid-area: main;
+}
+.stopka {
+  grid-area: stopka;
+}

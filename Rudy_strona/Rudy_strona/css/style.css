@@ -101,4 +101,24 @@ body {
   transform: translate(0%, -330%);
   text-align: center;
 }
+.ml9 {
+  position: relative;
+  font-weight: 20;
+  font-size: 1em;
+}
 
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+
+}

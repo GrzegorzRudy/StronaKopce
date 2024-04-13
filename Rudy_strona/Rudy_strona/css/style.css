@@ -29,12 +29,12 @@ body {
 .logo {
   grid-area: logo;
   background-color: green;
-
-
 }
 .button {
   width: 100%;
   height: 100%;
+  color: yellow;
+
 }
 .k1 {
   grid-area: k1;
@@ -54,9 +54,14 @@ body {
 .menu {
   grid-area: menu;
   background: blue;
-  font-size: 34px;
+  font-size: 39px;
   text-align: center;
   border-width: 1em;
+  text-align-all: center;
+  font-weight: bold;
+
+
+
 
 }
 .main {
@@ -95,4 +100,9 @@ body {
   -ms-transform: translate(0%, -330%);
   transform: translate(0%, -330%);
   text-align: center;
+}
+.he111 {
+  font-size: 30;
+  color: white
+  font-weight: bold;
 }
